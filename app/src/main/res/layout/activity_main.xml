@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.rafaelpinheiro.idadedecachorro.MainActivity"
+    android:background="@android:color/holo_blue_light"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="@drawable/cachorro"
+        android:id="@+id/imagemCachorroId"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:text="Digite e idade do seu cachorro, para descobrir a idade dele em anos humanos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textoDigiteIdadeId"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:background="@android:color/holo_blue_bright"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:id="@+id/botaoDescobrirIdadeId"
+        android:textSize="20sp"
+        android:text="Descobrir Idade" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:background="@android:color/background_light"
+        android:textSize="20sp"
+        android:id="@+id/textoEditavelIdadeId"
+        android:layout_weight="0.04" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:id="@+id/textoResultadoId"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        android:layout_weight="0.06" />
+</LinearLayout>
